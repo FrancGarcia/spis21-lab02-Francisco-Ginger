@@ -6,8 +6,6 @@ def sumTwo(a,b):
 
    return c
 
-
-
 x = sumTwo(3,5)
 
 print(x)
