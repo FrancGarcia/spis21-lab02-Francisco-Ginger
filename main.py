@@ -1,4 +1,4 @@
-# The goal of this program is to practice Python constructs
+# Step 1
 
 def sumTwo(a,b):
 
@@ -10,14 +10,12 @@ x = sumTwo(3,5)
 
 print(x)
 
-#how to comment
+# Step 2
 
 def getNumber():
-   
-   #symbols = input("Enter a digit: ")
-  number = 0  #int
-  answer = ""  #string
+  answer = ""  
   symbols = input("Enter a digit: ")
+  number = int(symbols)
   while number >= 0:
     answer += symbols
     symbols = input("Enter a digit: ")
@@ -26,6 +24,13 @@ def getNumber():
 
 print (getNumber())
 
+
+# Step 3
+ef sumDigits(x):
+
+   # You will need to complete this function
+
+   return sum
 
 
   
