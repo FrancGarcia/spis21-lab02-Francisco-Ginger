@@ -1,3 +1,5 @@
+
+
 # Step 1
 
 def sumTwo(a,b):
@@ -26,11 +28,28 @@ print (getNumber())
 
 
 # Step 3
-ef sumDigits(x):
+def sumDigits(x):
+    #
+    far_right = x % 10 #furthest right digit
+    print("Far right: " + str(far_right))
+    left_number = x // 10
+    print("Left number: " + str(left_number))
+    answer = 0
+    while left_number > 0: 
+      answer += far_right
+      print("answer: " + str(answer))
+      far_right = left_number % 10 
+      left_number = left_number // 10
+    answer += far_right
+    return answer
 
-   # You will need to complete this function
-
-   return sum
+print(sumDigits(588))
 
 
-  
+def sumDigits(x):
+  far_right = x%10
+  left_nums = x//10
+   while left_number > 0:
+      answer = far_right + sumDigits(left_nums)
+  return answer
+print(sumDigits(588))
