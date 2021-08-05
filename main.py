@@ -9,3 +9,23 @@ def sumTwo(a,b):
 x = sumTwo(3,5)
 
 print(x)
+
+#how to comment
+
+def getNumber():
+   
+   #symbols = input("Enter a digit: ")
+  number = 0  #int
+  answer = ""  #string
+  symbols = input("Enter a digit: ")
+  while number >= 0:
+    answer += symbols
+    symbols = input("Enter a digit: ")
+    number = int(symbols)
+  return answer
+
+print (getNumber())
+
+
+
+  
